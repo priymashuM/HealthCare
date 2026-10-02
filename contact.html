@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book a visit | Harbor Lane Family Clinic</title>
+  <meta name="description" content="Request an appointment, find our hours, or contact Harbor Lane Family Clinic.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="index.html"><img src="images/favicon.svg" alt="" width="36" height="36">Harbor Lane Clinic</a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open menu">
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">Menu</label>
+      <nav class="main-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="doctors.html">Our doctors</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+          <li><a class="btn btn-primary" href="contact.html#book">Book a visit</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-header">
+      <div class="wrap">
+        <h1>Book a visit</h1>
+        <p>Send a request and we'll call or email to confirm a time within one business day.</p>
+      </div>
+    </section>
+
+    <section class="wrap contact-grid" id="book">
+      <form class="form" action="#" method="post">
+        <div class="form-row">
+          <div class="field">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="dob">Date of birth</label>
+            <input id="dob" name="dob" type="date" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" required>
+          </div>
+          <div class="field">
+            <label for="email">Email <span class="hint">(optional)</span></label>
+            <input id="email" name="email" type="email" autocomplete="email">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="visit">Type of visit</label>
+            <select id="visit" name="visit">
+              <option>Annual checkup</option>
+              <option>Sick visit</option>
+              <option>Child's checkup</option>
+              <option>Ongoing condition follow-up</option>
+              <option>Women's health</option>
+              <option>Vaccine or lab test</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="doctor">Preferred clinician</label>
+            <select id="doctor" name="doctor">
+              <option>First available</option>
+              <option>Dr. Adaeze Okafor</option>
+              <option>Dr. Mateo Ruiz</option>
+              <option>Dr. Hannah Park</option>
+              <option>James Bell, NP</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="message">Reason for visit <span class="hint">(a sentence or two is enough)</span></label>
+          <textarea id="message" name="message"></textarea>
+        </div>
+        <div><button class="btn btn-primary" type="submit">Send request</button></div>
+      </form>
+
+      <aside class="info-panel">
+        <h3>Opening hours</h3>
+        <table class="hours">
+          <tr><td>Monday &ndash; Friday</td><td>8:00 am &ndash; 7:00 pm</td></tr>
+          <tr><td>Saturday</td><td>9:00 am &ndash; 1:00 pm</td></tr>
+          <tr><td>Sunday</td><td>Closed</td></tr>
+        </table>
+        <h3>Find us</h3>
+        <p>214 Harbor Lane, Bayview, CA 94000</p>
+        <p>Free parking behind the building. Bus 22 stops outside.</p>
+        <h3>Call or email</h3>
+        <p><a href="tel:+15550142000">(555) 014-2000</a></p>
+        <p><a href="mailto:hello@harborlaneclinic.example">hello@harborlaneclinic.example</a></p>
+        <div class="emergency">
+          <p><strong>Medical emergency?</strong> Call 911 or go to the nearest emergency room. Don't use this form.</p>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <h3>Harbor Lane Family Clinic</h3>
+          <p>Primary care for every age, in one building on Harbor Lane since 2009.</p>
+          <p>214 Harbor Lane, Bayview, CA 94000</p>
+        </div>
+        <div>
+          <h3>Pages</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="doctors.html">Our doctors</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Call us</h3>
+          <ul>
+            <li><a href="tel:+15550142000">(555) 014-2000</a></li>
+            <li><a href="mailto:hello@harborlaneclinic.example">hello@harborlaneclinic.example</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bottom">&copy; 2026 Harbor Lane Family Clinic. Sample website for demonstration only &mdash; not a real medical provider.</p>
+    </div>
+  </footer>
+</body>
+</html>
